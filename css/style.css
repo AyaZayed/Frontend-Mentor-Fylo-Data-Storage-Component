@@ -1,0 +1,57 @@
+:root {
+  --Primary-Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+  --Pale-Blue: hsl(243, 100%, 93%);
+  --Grayish-Blue: hsl(229, 7%, 55%);
+  --Dark-Blue: hsl(228, 56%, 26%);
+  --Very-Dark-Blue: hsl(229, 57%, 11%);
+}
+
+body {
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+  background-color: var(--Very-Dark-Blue);
+  background-image: url(../images/bg-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  color: var(--Pale-Blue);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 6rem 0;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: var(--Dark-Blue);
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.fylo-card {
+  border-top-right-radius: 70px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(6, 100%, 80%);
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  text-decoration: underline;
+}
