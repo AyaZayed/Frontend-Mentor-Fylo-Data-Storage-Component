@@ -10,11 +10,10 @@ body {
   font-size: 14px;
   font-family: "Raleway", sans-serif;
   height: 100vh;
-  width: 100%;
   background-image: url(../images/bg-desktop.png);
   background-repeat: no-repeat;
-  background-position: 0% bottom;
-  background-size: contain;
+  background-size: cover;
+  background-position: 0% 50vh;
   background-color: var(--Very-Dark-Blue);
   color: var(--Pale-Blue);
   display: flex;
@@ -65,6 +64,10 @@ main {
   -o-border-radius: 10px;
 }
 
+.storage-card {
+  width: 25rem;
+}
+
 .storage-card > h4 {
   font-weight: normal;
   color: hsla(243, 100%, 93%, 0.615);
@@ -78,7 +81,7 @@ main {
 }
 
 .storage-card .progress-bar {
-  width: 25rem;
+  width: 100%;
   height: 1rem;
   background: var(--Very-Dark-Blue);
   border-radius: 15px;
@@ -125,9 +128,9 @@ main {
   background-color: #fff;
   color: var(--Grayish-Blue);
   position: absolute;
-  top: -110px;
+  top: -100px;
   right: 0;
-  padding: 1rem;
+  padding: 0.8rem 1rem;
   width: fit-content;
   border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -140,14 +143,16 @@ main {
   align-items: center;
 }
 
-.storage-card .progress-bar::after {
-  content: "";
-  position: absolute;
-  border-style: solid;
-  border-width: 10px;
-  border-color: white white transparent transparent;
-  right: 0;
-  top: -41px;
+@media screen and (min-width: 768px) {
+  .storage-card .progress-bar::after {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    border-width: 10px;
+    border-color: white white transparent transparent;
+    right: 0;
+    top: -41px;
+  }
 }
 
 .storage-card .progress-bar #gigas-left span {
@@ -165,6 +170,35 @@ main {
 
 .storage-card .progress-bar #end-span {
   right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background-image: url(../images/bg-mobile.png);
+    padding: 0;
+  }
+  main {
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .fylo-card {
+    padding-right: 0;
+  }
+  .storage-card h4 {
+    text-align: center;
+  }
+  .storage-card .progress-bar #gigas-left {
+    border-bottom-right-radius: 10px;
+    top: 300%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+  }
 }
 
 .attribution {
