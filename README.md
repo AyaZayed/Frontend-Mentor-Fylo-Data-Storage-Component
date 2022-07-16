@@ -19,7 +19,7 @@ This is a solution to the [fylo data storage component challenge on frontend men
 
 ### Links
 
-- Solution URL: [Fylo Data Storage Component](https://www.frontendmentor.io/solutions/testimonials-grid-section-pZvny-bcYH)
+- Solution URL: [Fylo Data Storage Component](https://www.frontendmentor.io/solutions/fylo-storage-card-component-rNe_PouprZ)
 
 ## My process
 
